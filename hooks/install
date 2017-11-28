@@ -1,2 +1,9 @@
 #!/bin/bash
-bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+rvm install 2.3.1
+echo 'gem: --no-document' >> ~/.gemrc
+gem install bundler -v "1.15.2"
+rvmsudo bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+gem install sinatra -v 1.4.7
+gem install stripe -v 1.58.0
+gem install dotenv -v 1.0.2
+gem install encrypted_cookie -v 0.0.4

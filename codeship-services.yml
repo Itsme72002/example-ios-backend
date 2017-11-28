@@ -1,0 +1,8 @@
+azuredeployment:
+  image: microsoft/azure-cli
+  encrypted_env_file: azure.env.encrypted
+  environment:
+  - Resource=codeship_rg1
+  - Location=eastus
+  volumes:
+  - ./:/deploy

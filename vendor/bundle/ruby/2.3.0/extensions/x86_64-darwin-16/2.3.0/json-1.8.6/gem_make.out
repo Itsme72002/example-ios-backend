@@ -1,0 +1,13 @@
+current directory: /Users/obm1/codeship_dev1/example-ios-backend/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+/Users/obm1/.rvm/rubies/ruby-2.3.1/bin/ruby -r ./siteconf20171128-61877-10afhgw.rb extconf.rb
+creating Makefile
+
+current directory: /Users/obm1/codeship_dev1/example-ios-backend/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/obm1/codeship_dev1/example-ios-backend/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/obm1/codeship_dev1/example-ios-backend/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" install

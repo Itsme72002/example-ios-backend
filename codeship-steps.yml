@@ -1,12 +1,3 @@
-- type: serial
-  name: 01
-  steps:
-    - tag: master
-      service: azuredeployment
-      command: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
-- type: serial
-  name: 02
-  steps:
-    - tag: master
-      service: azuredeployment
-      command: bundle exec ruby web.rb
+- name: Azure Docker Engine Deploy
+  service: azuredeployment
+  command: bash /deploy/deployment/azure_deploy.sh

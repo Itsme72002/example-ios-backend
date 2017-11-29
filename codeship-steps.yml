@@ -1,10 +1,10 @@
 - type: serial
   name: 01
   steps:
-    - service: 01demo
+    - tag: master
       command: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
 - type: serial
   name: 02
   steps:
-    - service: 02demo
+    - tag: master
       command: bundle exec ruby web.rb
